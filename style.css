@@ -1,0 +1,170 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container,
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100;
+    min-width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.container .card {
+    width: 500px;
+    height: 400px;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    border-radius: 25px;
+}
+
+.container .card h2 {
+    font-family: 'Montserrat';
+    font-size: 32px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+.container .card span {
+    font-family: 'Montserrat';
+    font-size: 36px;
+    padding-bottom: 20px;
+}
+
+.container .card .restart {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    line-height: 1;
+    border-radius: 500px;
+    transition-property: background-color, border-color, color, box-shadow, filter;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    letter-spacing: 1px;
+    min-width: 160px;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    text-align: center;
+    padding: 17px 48px;
+    color: #f5f5f5;
+    background-color: #1ED760;
+    height: 48px;
+}
+
+.container .card .restart:hover {
+    transform: scale(1.04);
+    background-color: #21e065;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #191919;
+}
+
+canvas {
+    height: 90%;
+    
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    
+}
+
+.top_menu {
+    display: flex;
+}
+.down_menu {
+    font-size: 40px;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+#score_value {
+    font-size: 60px;
+}
+
+
+.resetMenu {
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    background-color: rgb(0, 0, 0, .5);
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    border: 2px solid white;
+    border-radius: 120px;
+    
+}
+
+.resetMenu > div {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.resetMenu > div > span {
+    font-size: 50px;
+}
+
+.resetMenu > button {
+    padding: 30px;
+    color: white;
+    background-color: rgba(26, 26, 26, 0.8);
+
+    border: 2px solid blue;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 30px;
+}
+
+.resetMenu > button:hover{
+    cursor: pointer;
+}
+
+.resetMenu > button > span {
+    font-size: 40px;
+}

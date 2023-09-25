@@ -1,2 +1,2 @@
 # Snake-Game
-A simple snake game
+A simple snake game with canvas
